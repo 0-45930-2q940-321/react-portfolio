@@ -13,21 +13,19 @@ const Sidebar = () => {
     return (
         <>
             <nav>
-                <div>
-                    <Icon className='icons' path={mdiMenu} onClick={showSidebar} />
+                <div className='hamburger'>
+                    <Icon className='hamburger-svg' path={mdiMenu} onClick={showSidebar} />
                 </div>
                 <div className={sidebar ? 'nav-bar active' : 'nav-bar'}>
                     <ul>
-                        <li className='nav-data-toggle'>
-                            <Link to='#' className='nav-menu'>
-                                <Icon className='icons' path={mdiClose} onClick={showSidebar}/>
-                            </Link>
+                        <li className='sidebar-exit'>
+                                <Icon className='sidebar-exit' path={mdiClose} onClick={showSidebar}/>
                         </li>
                         {SidebarObjects.map((data, key) => {
                             return (
                                 <li key={key} className='nav-text'>
                                     <Link to={data.path}>
-                                        {data.icon}
+                                        <div className='sidebar-icons'>{data.icon}</div>
                                         <div>{data.title}</div>
                                     </Link>
                                 </li>
