@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://michaelcounseller.github.io/react-portfolio/",
+  "homepage": "https://michaelcounseller.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@mdi/js": "^6.5.95",
